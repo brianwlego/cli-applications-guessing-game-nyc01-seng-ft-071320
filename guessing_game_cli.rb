@@ -6,7 +6,7 @@ def run_guessing_game
   user_input = gets.chomp.to_i 
   #binding.pry 
   case user_input
-    when comput_rand_num
+    when user_input.to_i == comput_rand_num
       puts "You guessed the correct number!"
     when "exit"
       puts "Goodbye!"
