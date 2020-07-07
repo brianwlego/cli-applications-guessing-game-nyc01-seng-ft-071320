@@ -4,7 +4,6 @@ require 'pry'
 def run_guessing_game
   comput_rand_num = rand(6)+1
   user_input = gets.chomp
-  #binding.pry 
   if user_input.to_i == comput_rand_num
     puts "You guessed the correct number!"
   elsif user_input == "exit"
