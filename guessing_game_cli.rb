@@ -6,11 +6,11 @@ def run_guessing_game
   user_input = gets.chomp 
   binding.pry 
   case user_input
-    when == comput_rand_num
+    when comput_rand_num
       puts "You guessed the correct number!"
-    when != comput_rand_num
-      puts "Sorry! The computer guessed #{comput_rand_num}"
-    when == "exit"
+    when "exit"
       puts "Goodbye!"
+    else
+      puts "Sorry! The computer guessed #{comput_rand_num}"
   end
 end
